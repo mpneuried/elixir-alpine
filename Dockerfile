@@ -19,7 +19,7 @@ RUN apk --update add --virtual build-dependencies wget ca-certificates && \
 # cleanup
 RUN rm -rf /var/cache/apk/*
 
+ENV PATH $PATH:/opt/elixir-${ELIXIR_V}/bin
+
 RUN mix local.hex --force
 RUN mix local.rebar --force
-
-ENV PATH $PATH:/opt/elixir-${ELIXIR_V}/bin
