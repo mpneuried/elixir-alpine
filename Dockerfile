@@ -2,7 +2,8 @@ FROM alpine:3.4
 MAINTAINER mpneuried
 
 # install erlang
-RUN apk --update add erlang
+RUN apk --update add erlang-crypto erlang-syntax-tools erlang-parsetools erlang-inets erlang-ssl erlang-public-key erlang-eunit \
+    erlang-asn1 erlang-sasl erlang-erl-interface erlang-dev wget git
 
 # install elixir
 ENV ELIXIR_V 1.3.4
@@ -17,5 +18,8 @@ RUN apk --update add --virtual build-dependencies wget ca-certificates && \
 
 # cleanup
 RUN rm -rf /var/cache/apk/*
+
+RUN mix local.hex --force
+RUN mix local.rebar --force
 
 ENV PATH $PATH:/opt/elixir-${ELIXIR_V}/bin
