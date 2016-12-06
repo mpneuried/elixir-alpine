@@ -1,5 +1,10 @@
 # elixir-alpine
 
+[![Docker Stars](https://img.shields.io/docker/pulls/mpneuried/elixir-alpine.svg)](https://hub.docker.com/r/mpneuried/elixir-alpine/)
+[![Docker Pulls](https://img.shields.io/docker/stars/mpneuried/elixir-alpine.svg)](https://hub.docker.com/r/mpneuried/elixir-alpine/)
+[![Docker Automated buil](https://img.shields.io/docker/automated/mpneuried/elixir-alpine.svg)](https://hub.docker.com/r/mpneuried/elixir-alpine/)  
+![Docker Hub Badge](http://dockeri.co/image/mpneuried/elixir-alpine)
+
 A minimal docker container to run elixir based on [alpine](https://hub.docker.com/r/_/alpine/)
 
 **For available versions head over to the [Tags](Tags/) Page.**
