@@ -1,4 +1,4 @@
-FROM alpine:3.4
+FROM alpine:3.5
 MAINTAINER mpneuried
 
 # install erlang
@@ -6,7 +6,7 @@ RUN apk --update add erlang-crypto erlang-syntax-tools erlang-parsetools erlang-
     erlang-asn1 erlang-sasl erlang-erl-interface erlang-dev erlang-xmerl wget git
 
 # install elixir
-ENV ELIXIR_V 1.3.4
+ENV ELIXIR_V 1.4.2
 
 RUN apk --update add --virtual build-dependencies wget ca-certificates && \
 	wget https://github.com/elixir-lang/elixir/releases/download/v${ELIXIR_V}/Precompiled.zip && \
