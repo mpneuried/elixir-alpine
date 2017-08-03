@@ -2,7 +2,7 @@ FROM alpine:3.6
 MAINTAINER mpneuried
 
 # versiosn to install
-ENV ELIXIR_V 1.5.0
+ENV ELIXIR_V 1.5.1
 ENV OTP_VERSION="20.0.2"
 
 # install erlang
