@@ -2,13 +2,13 @@ FROM alpine:3.6
 MAINTAINER mpneuried
 
 # versiosn to install
-ENV ELIXIR_V 1.5.1
-ENV OTP_VERSION="20.0.2"
+ENV ELIXIR_V 1.5.2
+ENV OTP_VERSION="20.1.2"
 
 # install erlang
 RUN set -xe \
 	&& OTP_DOWNLOAD_URL="https://github.com/erlang/otp/archive/OTP-${OTP_VERSION}.tar.gz" \
-	&& OTP_DOWNLOAD_SHA256="8a6020138eeecc015ac5d12ccb2b2c543e975559e669c376702723a2a67dc105" \
+	&& OTP_DOWNLOAD_SHA256="f3d370015c3544503cb76cfaf0bfc8de0f35d89eee206db9f1b9603cbffd8907" \
 	&& apk add --no-cache --virtual .fetch-deps \
 		curl \
 		ca-certificates \
